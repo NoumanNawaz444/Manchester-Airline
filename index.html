@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Manchester Airport Transfer</title>
+    <link rel="stylesheet" href="./Assets/Css/style.css">
+    <link rel="stylesheet" href="./Assets/Fonts/font/stylesheet.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav>
+        <div class="logo">
+            <a href="./index.html"><img src="./Assets/Images/logo.png" alt=""></a>
+        </div>
+
+        <div class="main_navigation" id="main_navigation">
+            <div class="nav_mobile" style="display: flex;position: relative;">
+                <div class="logo_mobile"><img src="./Assets/Images/mobile-logo.png" alt=""></div>
+                <div class="about_mobile">
+                    <span><a href="./index.html" class="home">Home</a></span>
+                    <span><a href="./about.html" class="about">About Us</a></span>
+                    <span><a href="./Contact-Us.html" class="Contact">Contact Us</a></span>
+                </div>
+
+                <div class="mobile_contact" style="position: relative;"><img src="./Assets/Images/call-icon.png"
+                        style="position: absolute; left: 21px;" alt=""><a href="tel:+447970399516">07970399516</a></div>
+
+                <div class="close_ham" id="close_ham"
+                    style="display: flex; justify-content: center; align-items: center; border-radius: 50%; height: 50px ; width: 50px; border: 2px solid white; position: absolute; bottom: 10px; left: 45%;">
+                    <img src="./Assets/Images/hame-close.png" alt="" style="height: 20px; width: 20px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="nav_contact">
+            <img src="./Assets/Images/call-icon.png" alt="" style="height: 22px; width: 22px; margin-right: 20px;">
+            <a href="tel:+447970399516">07970399516</a>
+        </div>
+
+        <div class="ham" id="ham"><img src="./Assets/Images/ham.png" alt=""></div>
+
+    </nav>
+
+
+    <!-- manchester airport  -->
+    <div class="manchester_airport" style="background-color: #FBFDFF;">
+
+        <div class="manchester_content">
+            <h1>Welcome To <br><span>Manchester</span> Airport <br> Taxi Services</h1>
+            <div class="mcc_btns">
+                <a href="tel:+447970399516" class="btnOne">Call Now</a>
+                <a href="#img_two" class="btnTwo">Get Quote</a>
+            </div>
+        </div>
+
+        <div class="manchester_image">
+            <img src="./Assets/Images/car-one-vector.png" alt="" class="imgOne">
+            <img src="./Assets/Images/car-one.png" alt="" class="imgTwo">
+        </div>
+    </div>
+
+    <!-- main_contact form -->
+
+    <div class="main_contact_form" id="img_two">
+
+
+        <form class="inputs_area" onsubmit="send_email()">
+
+            <div class="mcc_heading"
+                style="width:100%;padding:20px 10px;display:flex;align-items:center;justify-content:flex-start;">
+                <h2 style="color:#0073EC">Journey <span style="color:black;">Details</span></h2>
+            </div>
+
+
+            <div class="inner_input">
+                <div class="image"><img src="./Assets/Images/name-icon.png" alt=""></div><input type="text"
+                    placeholder="Your Name" required id="name">
+            </div>
+
+            <div class="inner_input">
+                <div class="image"><img src="./Assets/Images/call-icon-two.png" alt=""></div><input type="text"
+                    placeholder="Your Phone" required id="phone">
+            </div>
+
+            <div class="inner_input">
+                <div class="image"><img src="./Assets/Images/email-icon.png" alt=""></div><input type="email"
+                    placeholder="Your Email" id="email" required>
+            </div>
+
+            <div class="inner_input">
+                <div class="image"><img src="./Assets/Images/datetime-icon.png" alt=""></div><input type="date"
+                    placeholder="Pick Up Date & Time" required>
+            </div>
+
+            <div class="inner_input">
+                <div class="image"><img src="./Assets/Images/passenger-icon.png" alt=""></div><input type="number"
+                    placeholder="Number of Passengers" required id="passengers">
+            </div>
+
+            <div class="inner_input">
+                <div class="image"><img src="./Assets/Images/location-icon.png" alt=""></div><input type="text"
+                    placeholder="Pick Up Location(PostCode Required)" required class="pickLocation" id="pick_location">
+            </div>
+
+            <div class="inner_input">
+                <div class="image"><img src="./Assets/Images/location-icon-two.png" alt=""></div><input type="text"
+                    placeholder="Drop off Location(PostCode Required)" required class="pickLocation" id="drop_location">
+            </div>
+
+
+            <div class="btn">
+                <div><button type="submit" id="formSubmitBtn" onclick="send_email()">Submit</button></div>
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+    <!-- airport Transfer -->
+
+    <div class="airport_transfer">
+
+        <div class="content">
+            <h3 style="color: #0073EC; text-transform:capitalize; letter-spacing: 1px;">Manchester Airport Taxi</h3>
+            <h1><span style="color: #0073EC;">Airport</span> Transfers</h1>
+            <p>We are a Manchester based company providing transport across the entire UK. Additionally, we offer a
+                reliable and punctual service specialising in airport transfers. If you need a taxi to Heathrow,
+                Gatwick, Stansted, Luton, East Midlands, Birmingham, Bristol, Cardiff, Sheffield, Leeds Bradford,
+                Newcastle, Blackpool, Liverpool, Aberdeen, Edinburgh, Glasgow or any other airport we’ve got you
+                covered.</p>
+
+            <div class="btn"><a href="#img_two">Get Started</a></div>
+        </div>
+
+        <div class="image">
+            <img src="./Assets/Images/car-two.png" alt="">
+        </div>
+    </div>
+
+
+    <!-- stress free  area -->
+
+    <div class="stress_free_area">
+
+        <div class="image"><img src="./Assets/Images/strees-free-img.png" alt=""></div>
+
+        <div class="content">
+            <h1 style="text-transform: capitalize;">Stress free <span>travel</span></h1>
+            <p>Travelling can be stressful. particularly, if you’re unfamiliar with the area or worried about missing
+                your flight. That’s where we can help. Manchester airport taxis provides a comfortable and convenient
+                way to get you to your desired location.</p>
+
+            <div class="btn"><a href="#img_two">Get Started</a></div>
+
+        </div>
+    </div>
+
+
+    <!-- Range of vehicles -->
+
+    <div class="range_of_vehicle">
+
+        <div class="content">
+            <h1 style="margin: 20px 0;"><span style="position: relative; color: #0073EC;">Range</span> of vehicles</h1>
+            <p>Whether you’re travelling by yourself, with family or in a larger group, Manchester airport taxis are
+                available to accommodate your needs. Furthermore, with vehicles ranging from saloons, estates, MPV’s,
+                executive, and minibuses (subject to availability), you can find the perfect option for your specific
+                requirements. <br><br>
+
+                Also, with our airport transfers, you won’t have to worry about finding parking, navigating unfamiliar
+                roads, or even paying for tolls and parking fees. <br><br>
+
+                We have designed our airport transfer service to meet the needs of all travellers, whether you’re
+                arriving for business or leisure. Manchester airport taxi service offers a convenient and reliable
+                transport solution for anyone travelling to or from Manchester.</p>
+        </div>
+
+        <div class="image"><img src="./Assets/Images/range of vehicle.png" alt=""></div>
+    </div>
+
+
+    <!-- Safety and Comfort -->
+
+    <div class="safety_and_comfort">
+
+        <div class="image">
+            <img src="./Assets/Images/img-four.png" alt="">
+        </div>
+
+        <div class="content">
+            <h1 style="margin: 20px 0;">Safety and <span style="color: #0073EC; position: relative;">Comfort</span></h1>
+            <p>Travelling can be stressful. particularly, if you’re unfamiliar with the area or worried about missing
+                your flight. That’s where we can help. Manchester airport taxis provides a comfortable and convenient
+                way to get you to your desired location.</p>
+
+            <div class="btn"><a href="#img_two">Get Started</a></div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Valued customers -->
+
+
+    <div class="Valued_customers">
+
+        <div class="heading">
+            <h1>Valued <span style="color: #0073EC; position: relative;">customers</span></h1>
+        </div>
+
+        <p>Furthermore, we value our customers and their safety and satisfaction are very important to us. As a company
+            we have an excellent track record and a wealth of experience in the transport industry. <br><br>
+
+            We strive to make your airport transfers as easy and stress-free as possible. A range of payment options are
+            available, including credit card, PayPal, cryptocurrency and cash. <br><br>
+
+            Book your airport transfer with us today and experience the difference. Contact us to find out more about
+            our services and to make a reservation. Our team will be happy to help you plan your next airport transfer.
+        </p>
+    </div>
+
+
+
+    <!-- our services -->
+
+    <div class="our_services">
+
+        <div class="service">
+            <div class="image"><img src="./Assets/Images/location-icon-three.png" alt=""></div>
+            <div class="content">
+                <h2 style="margin: 15px 0;">Meetings & Events</h2>
+                <p>When you need to get to that important meeting or event, Manchester Airport Taxis are a great option
+                    as you can sit back, relax, and enjoy the scenery or even do some work on your laptop whilst your
+                    driver takes care of the driving. With professional drivers and well-maintained vehicles, Manchester
+                    Airport taxis provide a comfortable and convenient way to get from point A to point B.</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="image"><img src="./Assets/Images/service-icon.png" alt=""></div>
+            <div class="content">
+                <h2 style="margin: 15px 0;">Reliable Service</h2>
+                <p>We offer a reliable and punctual service specialising in airport transfers and long-distance trips.
+                    Our goal is to provide the highest quality travel experience/taxi service to and from all airports
+                    throughout the UK. Our experienced team members are dedicated to making your airport transfer as
+                    smooth and stress-free as possible ensuring a smooth transition from city to city.</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="image"><img src="./Assets/Images/meet&greet-icon.png" alt=""></div>
+            <div class="content">
+                <h2 style="margin: 15px 0;">Meet and Greet</h2>
+                <p>Meet and greet service is available upon request. Our drivers will welcome you with a smile and will
+                    happily assist with your luggage.</p><br>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="image"><img src="./Assets/Images/SEA-icon.png" alt=""></div>
+            <div class="content">
+                <h2 style="margin: 15px 0;">Sea Journey</h2>
+                <p>If you want to feel grounded and have a comfortable ride after a sea journey, we can provide you with
+                    a suitable vehicle and an experienced and professional driver.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- call me gesture -->
+
+    <div class="call_me_gesture">
+        <div class="content">
+            <h1>Call Us To Book A <span style="color: white; position: relative;">Taxi</span></h1>
+            <p style="margin: 20px 0; color: black;">Our agents will be happy to help</p>
+
+            <a href="tel:+447970399516">07970399516</a>
+        </div>
+
+        <div class="image"><img src="./Assets/Images/call-me-gesture.png" alt=""></div>
+    </div>
+
+
+    <!-- Benefits of booking with us -->
+
+    <div class="Benefits">
+
+        <div class="heading">
+            <h1><span style="position: relative; color: #0073EC;">Benefits</span> of booking with us</h1>
+        </div>
+
+        <div class="image"><img src="./Assets/Images/taxi-img.png" alt=""></div>
+
+        <div class="content">
+
+            <h1>
+                <div class="imageTwo"><img src="./Assets/Images/01-taxi-image.png" alt=""></div>
+                <p> No cancellation charges</p>
+            </h1>
+
+            <h1>
+                <div class="imageTwo"><img src="./Assets/Images/02-taxi-img.png" alt=""></div>
+                <p> No surcharges</p>
+            </h1>
+
+            <h1>
+                <div class="imageTwo"><img src="./Assets/Images/03-taxi-img.png" alt=""></div>
+                <p> No luggage charge</p>
+            </h1>
+
+            <h1>
+                <div class="imageTwo"><img src="./Assets/Images/04-taxi-img.png" alt=""></div>
+                <p> No hidden charges</p>
+            </h1>
+
+            <h1>
+                <div class="imageTwo"><img src="./Assets/Images/05-taxi-img.png" alt=""></div>
+                <p>Free waiting time up to 1 hour at the Airport. We understand flights can be delayed. However, we do
+                    recommend you make the booking 30 minutes to an hour after landing.</p>
+            </h1>
+
+            <h1>
+                <div class="imageTwo"><img src="./Assets/Images/06-taxi-img.png" alt=""></div>
+                <p> Cancellation policy <br><span style="font-weight: 100;"> 100% refund up to 24 hours or more before
+                        the trip.</span></p>
+            </h1>
+
+        </div>
+    </div>
+
+
+    <!-- why trust us -->
+
+    <div class="trust">
+        <div class="capabilities">
+            <div class="image"><img src="./Assets/Images/serge-free-img.png" alt=""></div>
+            <h3>Surge-free Guarantee</h3>
+        </div>
+        <div class="capabilities">
+            <div class="image"><img src="./Assets/Images/book-for-now-img.png" alt=""></div>
+            <h3>Book for Now or Later</h3>
+        </div>
+        <div class="capabilities">
+            <div class="image"><img src="./Assets/Images/cashless-crypto-img.png" alt=""></div>
+            <h3>Cashless & Cryptocurrency Payment</h3>
+        </div>
+    </div>
+
+
+
+    <!-- testimonial -->
+
+    <div class="testimonial">
+
+        <div class="heading">
+            <h1 style="text-transform: capitalize;">What our <span
+                    style="color: #0073EC; position: relative;">client</span> says</h1>
+            <p>What our Client says</p>
+        </div>
+
+    </div>
+
+    <!-- testimonial slider -->
+
+    <div class="testtimonial_slider" style="margin: 50px 0;">
+
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">Ergin Kesenel</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Los Angeles CA</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px; height: 180px;">
+                            <i>
+                                "Thanks a lot, Kammy. You are the best ever. Always on time and drive safe. Hope to see
+                                you again on my next trip."</i>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">Kamran Hussain</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Pakistan</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px;height: 180px;">
+                            <i>"Excellent service, booked at short notice very early hours in the morning. The driver
+                                arrived quickly. Very professional and knowledgeable. Highly recommended. The water was
+                                a nice touch"</i>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">Colin Watson</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Los Angeles CA</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px;height: 180px;">
+                            <i>"I
+                                was travelling from the US to Manchester Airport. I prearranged pickup and transport to
+                                Leeds. Aamir contacted me via phone at the airport and was on time. Clean car,
+                                stress-free ride to Leeds with a courteous driver!"</i>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">Lutz I.</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Los Angeles CA</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px;height: 180px;">
+                            <i>"We travelled from Germany to the UK to visit two Football games around Boxing Day in
+                                Liverpool and Bolton. We really appreciated the service and can highly recommend it. We
+                                will book this company again, when returning to the Manchester region. Thanks
+                                again."</i>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">Patricia Mooney</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Los Angeles CA</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px;height: 180px;">
+                            <i>"This is such a reliable taxi company. Communication was brilliant. And price very
+                                reasonable. A great wee company all round and will definitely be booking with them
+                                again. It’s great to know I can rely on them."</i>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">Markuss Dimitrijevs</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Los Angeles CA</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px;height: 180px;">
+                            <i>"This is a fantastic service.I had direct communication with the driver throughout, and
+                                he was still there to pick me up the minute I arrived at the airport. When you are tired
+                                and it is the middle of the night, that is priceless! Highly recommended."</i>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">Nicola Williams</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Los Angeles CA</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px;height: 180px;">
+                            <i>"As a very frequent flyer from Manchester Airport and many disastrous airport taxi runs I
+                                found these guys. They are amazing.I will never use anyone other than this firm again.
+                                BRILLIANT 5 STARS ⭐️"</i>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">kumajang kim</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Los Angeles CA</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px;height: 180px;">
+                            <i>"It was my first time choosing a taxi service. I felt very impressed, and the driver was
+                                very polite as he waited for me at the arrival hall. I highly recommend this taxi
+                                service company, and I will rebook my journey to the airport with this company again
+                                "</i>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">Barrington Deroy</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Los Angeles CA</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px;height: 180px;">
+                            <i>"On Tuesday 03rd Jan 2023, Aamir, collected us from Manchester Airport to
+                                Birmingham.Pointing out points of interest along the way. Aamir handled our luggage
+                                with courtesy.Would definitely use the service when in Manchester again."</i>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="innerContent"
+                        style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap;">
+
+
+                        <h3 style="width: 100%; display: flex; justify-content: center;">Rachel Doherty</h3>
+
+                        <!-- <p style="width: 100%; display: flex; justify-content: center;">Los Angeles CA</p> -->
+
+                        <div class="image" style="width: 100%; display: flex; justify-content: center;"><img
+                                src="./Assets/Images/5 star rating.png" alt="" height="10px"></div>
+
+                        <p
+                            style="width: 520px; text-align: center; margin: 10px 0;display: flex; padding: 10px;height: 180px;">
+                            <i>"Fab experience using this taxi service from Manchester Airport to London Heathrow
+                                The whole journey run smoothly from start to finish. Very professional and friendly service! Will definitely be using on my return to Manchester again."</i>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <div class="iconOne" style=" position: relative; background-color: #C8E4FF; border-radius: 50%;"><img
+                        src="./Assets/Images/icons8-left-arrow-64.png" alt="" style="width: 30px;"></div>
+                <span class="sr-only">Previous</span>
+            </a>
+
+
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <div class="iconTWo" style=" background-color:#C8E4FF;  position: relative;  border-radius: 50%;"><img
+                        src="./Assets/Images/icons8-right-arrow-64.png" alt="" style="width: 30px;"></div>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- We are Read to take your call! -->
+
+    <div class="ready_to_call">
+        <div class="content">
+            <h1>We are <span style=" display: flex; position: relative; margin: 0 10px;"> Ready </span> to take your
+                call!</h1>
+
+            <a href="tel:+447970399516">07970399516</a>
+        </div>
+    </div>
+
+
+    <!-- footer one -->
+
+    <div class="footer_one">
+
+        <div class="fo_logo">
+            <img src="./Assets/Images/footer-logo.png" alt="">
+        </div>
+        <div class="div" style="display: flex; flex-wrap: wrap;">
+            <div class="fo_content_one" style="width: 250px;">
+                <h2>Address</h2>
+                <p style="opacity: .7;">20 Wincombe St, Rusholme, Manchester M14 7PJ</p>
+            </div>
+
+            <div class="fo_contact" style="width: 250px;">
+                <h2>Contacts</h2>
+                <a href="tel:+447970399516" style="opacity: .7; color: white; text-decoration: none;">07970 399516</a>
+                <a href="mailto:info@manchesterairporttaxi.vip"
+                    style="opacity: .7;color: white; text-decoration: none">info@manchesterairporttaxi.vip</a>
+            </div>
+        </div>
+
+        <div class="footer_two">
+            <p>Transport Solutions © 2023 All rights reserved. <a href="./privacypolicy.html"
+                    style="text-decoration: none; color: #0073EC;"> See Privacy Policy </a></p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function send_email() {
+            Email.send({
+                Host: "smtp.dreamhost.com",
+                Username: "info@manchesterairporttaxi.vip",
+                Password: "eYq5jSAh",
+                To: 'info@manchesterairporttaxi.vip',
+                From: 'info@manchesterairporttaxi.vip',
+                Subject: "Form-Submission Manchester-Airline Travels",
+                Body: `Name : ${document.getElementById('name').value} <br><br>
+            Phone No : ${document.getElementById('phone').value} <br><br>
+            Email Address : ${document.getElementById('email').value}<br><br>
+            No of Passengers : ${document.getElementById('passengers').value} <br><br>
+            Pickup Location : ${document.getElementById('pick_location').value} <br><br>
+            Drop Location : ${document.getElementById('drop_location').value} <br><br>`
+            }).then(
+                alert('Message Sent Successfully. Press Okay To Continue')
+            );
+        };
+
+
+
+
+        let formSubmitBtn = document.getElementById('formSubmitBtn');
+
+        formSubmitBtn.addEventListener('click', thankuPage)
+
+        function thankuPage() {
+            window.open('./thanku.html', '_parent');
+        }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+<script src="./Assets/Js/app.js"></script>
+
+</html>

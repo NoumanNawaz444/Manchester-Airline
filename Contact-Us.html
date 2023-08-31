@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us-Manchester Airport Transfer</title>
+    <link rel="stylesheet" href="./Assets/Css/contact.css">
+    <link rel="stylesheet" href="./Assets/Fonts/font/stylesheet.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav>
+        <div class="logo">
+            <a href="./index.html"><img src="./Assets/Images/logo.png" alt=""></a>
+        </div>
+
+        <div class="main_navigation" id="main_navigation">
+            <div class="nav_mobile" style="display: flex;position: relative;">
+                <div class="logo_mobile"><img src="./Assets/Images/mobile-logo.png" alt=""></div>
+                <div class="about_mobile">
+                    <span><a href="./index.html" class="home">Home</a></span>
+                    <span><a href="./about.html" class="about">About Us</a></span>
+                    <span><a href="./Contact-Us.html" class="Contact">Contact Us</a></span>
+                </div>
+
+                <div class="mobile_contact" style="position: relative;"><img src="./Assets/Images/call-icon.png"
+                        style="position: absolute; left: 21px;" alt=""><a href="tel:+447970399516">07970399516</a></div>
+
+                <div class="close_ham" id="close_ham"
+                    style="display: flex; justify-content: center; align-items: center; border-radius: 50%; height: 50px ; width: 50px; border: 2px solid white; position: absolute; bottom: 10px; left: 45%;">
+                    <img src="./Assets/Images/hame-close.png" alt="" style="height: 20px; width: 20px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="nav_contact">
+            <img src="./Assets/Images/call-icon.png" alt="" style="height: 22px; width: 22px; margin-right: 20px;">
+            <a href="tel:+447970399516">07970399516</a>
+        </div>
+
+        <div class="ham" id="ham"><img src="./Assets/Images/ham.png" alt=""></div>
+
+    </nav>
+
+
+
+    <!-- get_in_touch -->
+
+
+    <div class="get_in_touch">
+        <div class="content">
+            <h3 style="color: #0073EC;">Get In Touch</h3>
+            <h1 style="margin-bottom: 10px;"><span style="position: relative; color: #0073EC;">Contact</span> Info</h1>
+            <p>Book your airport transfer with us today and experience the difference. Contact us to find out more about
+                our services and to make a reservation. Our team is always ready to answer any questions you may have
+                and happy to help you plan your next airport transfer.</p>
+        </div>
+    </div>
+
+
+
+    <!-- contact form -->
+    <div class="main_contact_form">
+
+        <form action="" onsubmit="send_email()" style="width: 600px;">
+
+            <div class="contact_form" style="background-color: #F4FAFF; width: 100%;">
+
+                <div class="heading">
+                    <h1><span style="position: relative; color: #0073EC;">Contact</span> Info</h1>
+                </div>
+
+
+
+                <div class="input_area">
+                    <h3 style="margin: 10px 0;">Name*</h3>
+                    <input type="text" placeholder="Your Name" required id="name">
+                    <div class="image"><img src="./Assets/Images/name-icon.png" alt=""></div>
+                </div>
+
+                <div class="input_area">
+                    <h3 style="margin: 10px 0;">Email*</h3>
+                    <input type="email" placeholder="Your Email" required id="email">
+                    <div class="image"><img src="./Assets/Images/email-icon.png" alt=""></div>
+                </div>
+
+                <div class="input_area">
+                    <h3 style="margin: 10px 0;">Number*</h3>
+                    <input type="text" placeholder="Your Number" required id="phone">
+                    <div class="image"><img src="./Assets/Images/call-icon.png" alt=""></div>
+                </div>
+
+                <div class="input_area">
+                    <h3 style="margin: 10px 0;">Message*</h3>
+                    <textarea placeholder="Your Message" id="passengers"></textarea>
+                </div>
+
+                <div class="input_area"
+                    style="display: flex; flex-wrap: nowrap; flex-direction: row; align-items: flex-start;">
+                    <input type="checkbox" style="height: 15px; width: 15px; margin-right: 10px;">
+                    <p>By using this form you agree with the storage and handling of your data by this website.</p>
+                </div>
+
+
+                <div class="input_area">
+                    <div>
+                        <button type="button" id="btn" onclick="send_email()">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+
+
+
+        <!-- social links -->
+
+        <div class="social_links">
+
+
+            <a href="tel:+447970399516" style="text-decoration: none; color: black;">
+                <div class="social_service">
+                    <div class="image"><img src="./Assets/Images/call-icon.png" alt=""></div>
+                    <h2>Contact</h2>
+                    <a href="tel:+447970399516" style="text-decoration: none; color: black;">07970399516</a>
+                </div>
+            </a>
+
+            <a href="https://wa.me/+447970399516" style="text-decoration: none; color: black;">
+                <div class="social_service">
+                    <div class="image"><img src="./Assets/Images/whatsapp-logo.png" style="height: 23px; width: 23px;"
+                            alt=""></div>
+                    <h2>WhatsApp</h2>
+                    <a href=" https://wa.me/+447970399516" style="text-decoration: none; color: black;"></a>
+                    <p>Chat on WhatsApp</p>
+                </div>
+            </a>
+
+
+            <a href="mailto:info@manchesterairporttaxi.vip" style="text-decoration: none; color: black;">
+                <div class="social_service">
+                    <div class="image"><img src="./Assets/Images/email-icon.png" alt=""></div>
+                    <h2>Email</h2>
+                    <a href="mailto:info@manchesterairporttaxi.vip" style="text-decoration: none; color: black;"></a>
+                    <p>info@manchesterairporttaxi.vip</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- We are Read to take your call! -->
+
+    <div class="ready_to_call">
+        <div class="content">
+            <h1>We are <span style=" display: flex; position: relative; margin: 0 10px;"> Ready </span> to take your
+                call!</h1>
+
+            <a href="tel:+447970399516">07970399516</a>
+        </div>
+    </div>
+
+
+
+    <!-- footer one -->
+
+    <div class="footer_one">
+
+        <div class="fo_logo">
+            <img src="./Assets/Images/footer-logo.png" alt="">
+        </div>
+        <div class="div" style="display: flex; flex-wrap: wrap;">
+            <div class="fo_content_one" style="width: 250px;">
+                <h2>Address</h2>
+                <p style="opacity: .7;">20 Wincombe St, Rusholme, Manchester M14 7PJ</p>
+            </div>
+
+            <div class="fo_contact" style="width: 250px;">
+                <h2>Contacts</h2>
+                <a href="tel:+447970399516" style="opacity: .7; color: white; text-decoration: none;">07970 399516</a>
+                <a href="mailto:info@manchesterairporttaxi.vip"
+                    style="opacity: .7;color: white; text-decoration: none">info@manchesterairporttaxi.vip</a>
+            </div>
+        </div>
+
+        <div class="footer_two">
+            <p>Transport Solutions © 2023 All rights reserved. <a href="./privacypolicy.html"
+                    style="text-decoration: none; color: #0073EC;"> See Privacy Policy </a></p>
+        </div>
+
+    </div>
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function send_email() {
+            Email.send({
+                Host: "smtp.dreamhost.com",
+                Username: "info@manchesterairporttaxi.vip",
+                Password: "eYq5jSAh",
+                To: 'info@manchesterairporttaxi.vip',
+                From: 'info@manchesterairporttaxi.vip',
+                Subject: "Form-Submission Manchester-Airline Travels",
+                Body: `Name : ${document.getElementById('name').value} <br><br>
+            Phone No : ${document.getElementById('phone').value} <br><br>
+            Email Address : ${document.getElementById('email').value}<br><br>
+            Phone No : ${document.getElementById('phone').value}<br><br>
+            Message : ${document.getElementById('passengers').value} <br><br>`
+            }).then(
+                alert('Message Sent Successfully. Press Okay To Continue')
+            );
+        };
+
+        let btn = document.getElementById('btn');
+
+        btn.addEventListener('click', thankuPage)
+
+        function thankuPage() {
+            window.open('./thanku.html', '_parent');
+        }
+
+    </script>
+
+</body>
+<script src="./Assets/Js/app.js"></script>
+
+</html>
